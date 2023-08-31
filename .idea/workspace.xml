@@ -4,11 +4,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29e9b148-d417-460d-a89f-e144cc07975c" name="Changes" comment="" />
+    <list default="true" id="29e9b148-d417-460d-a89f-e144cc07975c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/US_Hip_Dataset_Documentation.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/.doctrees/environment.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/.doctrees/environment.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/.doctrees/intro.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/.doctrees/intro.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/.buildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/.buildinfo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_sources/intro.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/_sources/intro.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/documentation_options.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/_static/documentation_options.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/genindex.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/genindex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/intro.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/intro.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/markdown-notebooks.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/markdown-notebooks.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/markdown.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/markdown.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/notebooks.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/notebooks.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/objects.inv" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/objects.inv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/searchindex.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/searchindex.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/jupyter_execute/markdown-notebooks.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/jupyter_execute/markdown-notebooks.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/pdf/book.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/pdf/book.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_toc.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_toc.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/intro.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/intro.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jupyter Notebook" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -20,12 +49,15 @@
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2UiWdObh0D2Wk4TxSHZAwaOR7ni" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+    <option name="showScratchesAndConsoles" value="false" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
@@ -36,9 +68,16 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.project&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="conda activate docs" />
+    </option>
+  </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="docs" />
@@ -75,6 +114,12 @@
       <workItem from="1693424418457" duration="311000" />
       <workItem from="1693424800083" duration="276000" />
       <workItem from="1693425549961" duration="656000" />
+      <workItem from="1693498423742" duration="77000" />
+      <workItem from="1693498513969" duration="3068000" />
+      <workItem from="1693504551373" duration="82000" />
+      <workItem from="1693504634810" duration="11000" />
+      <workItem from="1693504654597" duration="141000" />
+      <workItem from="1693504800959" duration="1456000" />
     </task>
     <servers />
   </component>
@@ -91,5 +136,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

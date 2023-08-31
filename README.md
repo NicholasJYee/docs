@@ -3,4 +3,12 @@
 This repo contains the source code for the [Jupyter Book]([url](https://jupyterbook.org/en/stable/intro.html)https://jupyterbook.org/en/stable/intro.html) for my graduate studies.
 
 Build the html and pdf using the command:
-` jb build docs/ --builder pdfhtml `
+
+` conda activate docs `
+
+
+` jb build docs `
+
+Host the html file using the command:
+
+` python3 -m http.server -d docs/_build/html `

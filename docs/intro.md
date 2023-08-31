@@ -1,11 +1,12 @@
-# Welcome to your Jupyter Book
+# Welcome to Nicholas J. Yee's documentation
 
-This is a small sample book to give you a feel for how book content is
-structured.
-It shows off a few of the major file types, as well as some sample content.
-It does not go in-depth into any particular topic - check out [the Jupyter Book documentation](https://jupyterbook.org) for more information.
+This document contains the organized notes and documentation for 
+projects contained within the scope of his graduate studies.
 
-Check out the content pages bundled with this sample book to see more.
+You will find project overviews, data analysis, and scripts library.
+
+The source code is available on [Orthopaedic Biomechanics Lab](https://bitbucket.org/OrthopaedicBiomechanicsLab/workspace/overview/)
+bitbucket page.
 
 ```{tableofcontents}
 ```
