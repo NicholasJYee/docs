@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/docs/chapters/.idea/chapters.iml" filepath="$PROJECT_DIR$/docs/chapters/.idea/chapters.iml" />
-      <module fileurl="file://$USER_HOME$/Library/Caches/JetBrains/DataSpell2023.2/demo/ds/dataspell_demo/data/.idea/data.iml" filepath="$USER_HOME$/Library/Caches/JetBrains/DataSpell2023.2/demo/ds/dataspell_demo/data/.idea/data.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/docs.iml" filepath="$PROJECT_DIR$/.idea/docs.iml" />
     </modules>
   </component>

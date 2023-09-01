@@ -4,39 +4,258 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29e9b148-d417-460d-a89f-e144cc07975c" name="Changes" comment="">
+    <list default="true" id="29e9b148-d417-460d-a89f-e144cc07975c" name="Changes" comment="Organize table of contents">
+      <change beforePath="$PROJECT_DIR$/.idea/docs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/docs.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/US_Hip_Dataset_Documentation.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/.doctrees/environment.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/.doctrees/environment.pickle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/.doctrees/intro.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/.doctrees/intro.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/html/.buildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/.buildinfo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/html/_sources/intro.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/_sources/intro.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/documentation_options.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/_static/documentation_options.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/html/genindex.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/genindex.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/html/intro.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/intro.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/html/markdown-notebooks.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/markdown-notebooks.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/html/markdown.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/markdown.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/html/notebooks.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/notebooks.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/html/objects.inv" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/objects.inv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/html/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/html/searchindex.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/searchindex.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/jupyter_execute/markdown-notebooks.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/jupyter_execute/markdown-notebooks.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/pdf/book.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/pdf/book.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_toc.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_toc.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/intro.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/intro.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.idea/docs.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/.doctrees/0_US_Hip_Dataset_Documentation.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/.doctrees/1_DICOM_to_JPEG_Frames_Code.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/.doctrees/2_Square_Mask_Segmentation_Code.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/.doctrees/3_PyTorch_Image_Classification_Code.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/.doctrees/DICOM_to_JPEG_Frames_Code.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/.doctrees/PyTorch_Image_Classification_Code.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/.doctrees/Square_Mask_Segmentation_Code.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/.doctrees/US_Hip_Dataset_Documentation.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/.doctrees/chapters/0_US_Hip_Dataset_Documentation.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/.doctrees/chapters/1_DICOM_to_JPEG_Frames_Code.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/.doctrees/chapters/2_Square_Mask_Segmentation_Code.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/.doctrees/chapters/3_PyTorch_Image_Classification_Code.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/.doctrees/environment.pickle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/.doctrees/intro.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/.doctrees/markdown-notebooks.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/.doctrees/markdown.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/.doctrees/notebooks.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/.buildinfo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/US_Hip_Dataset_Documentation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_sources/US_Hip_Dataset_Documentation.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_sources/chapters/0_US_Hip_Dataset_Documentation.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_sources/chapters/1_DICOM_to_JPEG_Frames_Code.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_sources/chapters/2_Square_Mask_Segmentation_Code.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_sources/chapters/3_PyTorch_Image_Classification_Code.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_sources/intro.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_sources/markdown-notebooks.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_sources/markdown.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_sources/notebooks.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_sphinx_design_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_sphinx_design_static/design-tabs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/_sphinx_javascript_frameworks_compat.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/basic.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/check-solid.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/clipboard.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/copy-button.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/copybutton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/copybutton.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/copybutton_funcs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/design-tabs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/doctools.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/documentation_options.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/file.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/images/logo_binder.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/images/logo_colab.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/images/logo_deepnote.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/images/logo_jupyterhub.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/jquery-3.6.0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/language_data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/ar/LC_MESSAGES/booktheme.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/ar/LC_MESSAGES/booktheme.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/bg/LC_MESSAGES/booktheme.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/bg/LC_MESSAGES/booktheme.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/bn/LC_MESSAGES/booktheme.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/bn/LC_MESSAGES/booktheme.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/ca/LC_MESSAGES/booktheme.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/ca/LC_MESSAGES/booktheme.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/cs/LC_MESSAGES/booktheme.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/cs/LC_MESSAGES/booktheme.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/da/LC_MESSAGES/booktheme.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/da/LC_MESSAGES/booktheme.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/de/LC_MESSAGES/booktheme.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/de/LC_MESSAGES/booktheme.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/el/LC_MESSAGES/booktheme.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/el/LC_MESSAGES/booktheme.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/eo/LC_MESSAGES/booktheme.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/eo/LC_MESSAGES/booktheme.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/es/LC_MESSAGES/booktheme.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/es/LC_MESSAGES/booktheme.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/et/LC_MESSAGES/booktheme.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/et/LC_MESSAGES/booktheme.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/fi/LC_MESSAGES/booktheme.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/fi/LC_MESSAGES/booktheme.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/fr/LC_MESSAGES/booktheme.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/fr/LC_MESSAGES/booktheme.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/hr/LC_MESSAGES/booktheme.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/hr/LC_MESSAGES/booktheme.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/id/LC_MESSAGES/booktheme.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/id/LC_MESSAGES/booktheme.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/it/LC_MESSAGES/booktheme.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/it/LC_MESSAGES/booktheme.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/iw/LC_MESSAGES/booktheme.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/iw/LC_MESSAGES/booktheme.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/ja/LC_MESSAGES/booktheme.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/ja/LC_MESSAGES/booktheme.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/ko/LC_MESSAGES/booktheme.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/ko/LC_MESSAGES/booktheme.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/lt/LC_MESSAGES/booktheme.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/lt/LC_MESSAGES/booktheme.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/lv/LC_MESSAGES/booktheme.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/lv/LC_MESSAGES/booktheme.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/ml/LC_MESSAGES/booktheme.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/ml/LC_MESSAGES/booktheme.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/mr/LC_MESSAGES/booktheme.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/mr/LC_MESSAGES/booktheme.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/ms/LC_MESSAGES/booktheme.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/ms/LC_MESSAGES/booktheme.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/nl/LC_MESSAGES/booktheme.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/nl/LC_MESSAGES/booktheme.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/no/LC_MESSAGES/booktheme.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/no/LC_MESSAGES/booktheme.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/pl/LC_MESSAGES/booktheme.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/pl/LC_MESSAGES/booktheme.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/pt/LC_MESSAGES/booktheme.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/pt/LC_MESSAGES/booktheme.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/ro/LC_MESSAGES/booktheme.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/ro/LC_MESSAGES/booktheme.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/ru/LC_MESSAGES/booktheme.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/ru/LC_MESSAGES/booktheme.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/sk/LC_MESSAGES/booktheme.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/sk/LC_MESSAGES/booktheme.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/sl/LC_MESSAGES/booktheme.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/sl/LC_MESSAGES/booktheme.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/sr/LC_MESSAGES/booktheme.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/sr/LC_MESSAGES/booktheme.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/sv/LC_MESSAGES/booktheme.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/sv/LC_MESSAGES/booktheme.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/ta/LC_MESSAGES/booktheme.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/ta/LC_MESSAGES/booktheme.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/te/LC_MESSAGES/booktheme.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/te/LC_MESSAGES/booktheme.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/tg/LC_MESSAGES/booktheme.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/tg/LC_MESSAGES/booktheme.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/th/LC_MESSAGES/booktheme.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/th/LC_MESSAGES/booktheme.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/tl/LC_MESSAGES/booktheme.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/tl/LC_MESSAGES/booktheme.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/tr/LC_MESSAGES/booktheme.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/tr/LC_MESSAGES/booktheme.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/uk/LC_MESSAGES/booktheme.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/uk/LC_MESSAGES/booktheme.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/ur/LC_MESSAGES/booktheme.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/ur/LC_MESSAGES/booktheme.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/vi/LC_MESSAGES/booktheme.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/vi/LC_MESSAGES/booktheme.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/zh_CN/LC_MESSAGES/booktheme.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/zh_CN/LC_MESSAGES/booktheme.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/zh_TW/LC_MESSAGES/booktheme.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/locales/zh_TW/LC_MESSAGES/booktheme.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/minus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/plus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/pygments.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/sbt-webpack-macros.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/scripts/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/scripts/bootstrap.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/scripts/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/scripts/pydata-sphinx-theme.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/scripts/pydata-sphinx-theme.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/scripts/sphinx-book-theme.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/scripts/sphinx-book-theme.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/searchtools.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/sphinx-thebe.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/sphinx-thebe.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/styles/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/styles/pydata-sphinx-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/styles/sphinx-book-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/styles/theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/togglebutton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/togglebutton.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/underscore-1.13.1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/underscore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/vendor/fontawesome/6.1.2/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/vendor/fontawesome/6.1.2/css/all.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/vendor/fontawesome/6.1.2/webfonts/fa-v4compatibility.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/vendor/fontawesome/6.1.2/webfonts/fa-v4compatibility.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/_static/webpack-macros.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/chapters/0_US_Hip_Dataset_Documentation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/chapters/1_DICOM_to_JPEG_Frames_Code.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/chapters/2_Square_Mask_Segmentation_Code.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/chapters/3_PyTorch_Image_Classification_Code.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/genindex.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/intro.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/markdown-notebooks.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/markdown.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/notebooks.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/objects.inv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/reports/notebooks.err.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/search.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/html/searchindex.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/jupyter_execute/0_US_Hip_Dataset_Documentation.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/jupyter_execute/1_DICOM_to_JPEG_Frames_Code.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/jupyter_execute/2_Square_Mask_Segmentation_Code.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/jupyter_execute/3_PyTorch_Image_Classification_Code.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/jupyter_execute/DICOM_to_JPEG_Frames_Code.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/jupyter_execute/PyTorch_Image_Classification_Code.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/jupyter_execute/Square_Mask_Segmentation_Code.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/jupyter_execute/US_Hip_Dataset_Documentation.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/jupyter_execute/chapters/0_US_Hip_Dataset_Documentation.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/jupyter_execute/chapters/1_DICOM_to_JPEG_Frames_Code.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/jupyter_execute/chapters/2_Square_Mask_Segmentation_Code.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/jupyter_execute/chapters/3_PyTorch_Image_Classification_Code.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/jupyter_execute/markdown-notebooks.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/jupyter_execute/notebooks.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_build/pdf/book.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_config.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_toc.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/chapters/.idea/chapters.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/chapters/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/chapters/0_US_Hip_Dataset_Documentation.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/chapters/1_DICOM_to_JPEG_Frames_Code.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/chapters/2_Square_Mask_Segmentation_Code.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/chapters/3_PyTorch_Image_Classification_Code.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/intro.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/markdown-notebooks.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/markdown.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/notebooks.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/references.bib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/requirements.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Jupyter Notebook" />
       </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
     </option>
   </component>
   <component name="Git.Settings">
@@ -55,24 +274,24 @@
     <option name="showLibraryContents" value="true" />
     <option name="showScratchesAndConsoles" value="false" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/Y/Dropbox/1University of Toronto/0Graduate School/docs&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.project&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/Y/Dropbox/1University of Toronto/0Graduate School/docs",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="conda activate docs" />
@@ -87,8 +306,9 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="docs" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
@@ -119,8 +339,26 @@
       <workItem from="1693504551373" duration="82000" />
       <workItem from="1693504634810" duration="11000" />
       <workItem from="1693504654597" duration="141000" />
-      <workItem from="1693504800959" duration="1456000" />
+      <workItem from="1693504800959" duration="3912000" />
+      <workItem from="1693582449005" duration="123000" />
+      <workItem from="1693582580318" duration="8000" />
+      <workItem from="1693582608207" duration="25000" />
+      <workItem from="1693582641111" duration="93000" />
+      <workItem from="1693582746445" duration="4000" />
+      <workItem from="1693582899614" duration="36000" />
+      <workItem from="1693582946809" duration="67000" />
+      <workItem from="1693583056767" duration="335000" />
+      <workItem from="1693583419517" duration="39000" />
     </task>
+    <task id="LOCAL-00001" summary="Organize table of contents">
+      <option name="closed" value="true" />
+      <created>1693506319444</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1693506319444</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,6 +374,13 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
+    <MESSAGE value="Organize table of contents" />
+    <option name="LAST_COMMIT_MESSAGE" value="Organize table of contents" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
