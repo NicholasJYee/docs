@@ -1,0 +1,77 @@
+Traceback (most recent call last):
+  File "/Users/Y/miniconda3/envs/docs/lib/python3.11/site-packages/jupyter_cache/executors/utils.py", line 58, in single_nb_execution
+    executenb(
+  File "/Users/Y/miniconda3/envs/docs/lib/python3.11/site-packages/nbclient/client.py", line 1305, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Y/miniconda3/envs/docs/lib/python3.11/site-packages/jupyter_core/utils/__init__.py", line 166, in wrapped
+    return loop.run_until_complete(inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Y/miniconda3/envs/docs/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/Y/miniconda3/envs/docs/lib/python3.11/site-packages/nbclient/client.py", line 705, in async_execute
+    await self.async_execute_cell(
+  File "/Users/Y/miniconda3/envs/docs/lib/python3.11/site-packages/nbclient/client.py", line 1058, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/Users/Y/miniconda3/envs/docs/lib/python3.11/site-packages/nbclient/client.py", line 914, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+import pydicom
+import os
+import numpy as np
+from PIL import Image
+from pydicom.errors import InvalidDicomError
+
+def convert_and_save_frames_to_jpeg(file_path, output_directory):
+    try:
+        dicom_file = pydicom.dcmread(file_path)
+    except InvalidDicomError:
+        return  # Skip this file if it's not a valid DICOM file
+
+    pixel_array = dicom_file.pixel_array
+
+    if 'NumberOfFrames' in dicom_file and int(dicom_file.NumberOfFrames) > 1:
+        frames = [pixel_array[frame_index] for frame_index in range(int(dicom_file.NumberOfFrames))]
+    else:
+        frames = [pixel_array]
+
+    for frame_index, frame in enumerate(frames):
+        if frame.ndim > 2:
+            frame = frame[:, :, 0]
+
+        frame_normalized = (np.maximum(frame, 0) / frame.max()) * 255.0
+        frame_uint8 = np.uint8(frame_normalized)
+
+        image = Image.fromarray(frame_uint8, 'L')
+        output_file_path = os.path.join(output_directory, f'{os.path.basename(file_path)}{frame_index+1:04}.jpeg')
+
+        image.save(output_file_path)
+
+# Define the input and output directories
+directory_path = './data/philipsepiq7g_c5-1/0all/full_dicom'  # Replace with the actual directory path
+output_directory = './data/philipsepiq7g_c5-1/0all/frames'  # Replace with the desired output directory
+
+# Create the output directory if it doesn't exist
+os.makedirs(output_directory, exist_ok=True)
+
+# Iterate through all files in the directory
+for file_name in os.listdir(directory_path):
+    file_path = os.path.join(directory_path, file_name)
+    if os.path.isfile(file_path):
+        convert_and_save_frames_to_jpeg(file_path, output_directory)
+
+print(f'Frames have been converted to JPEG and saved in {output_directory}')
+------------------
+
+
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mModuleNotFoundError[0m                       Traceback (most recent call last)
+Cell [0;32mIn[1], line 1[0m
+[0;32m----> 1[0m [38;5;28;01mimport[39;00m [38;5;21;01mpydicom[39;00m
+[1;32m      2[0m [38;5;28;01mimport[39;00m [38;5;21;01mos[39;00m
+[1;32m      3[0m [38;5;28;01mimport[39;00m [38;5;21;01mnumpy[39;00m [38;5;28;01mas[39;00m [38;5;21;01mnp[39;00m
+
+[0;31mModuleNotFoundError[0m: No module named 'pydicom'
+
