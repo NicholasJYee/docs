@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29e9b148-d417-460d-a89f-e144cc07975c" name="Changes" comment="Update documentation on code">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapters/3_PyTorch_Image_Classification_Code.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/chapters/3_PyTorch_Image_Classification_Code.ipynb" afterDir="false" />
+    <list default="true" id="29e9b148-d417-460d-a89f-e144cc07975c" name="Changes" comment="Remove system files">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,25 +49,25 @@
     <option name="showLibraryContents" value="true" />
     <option name="showScratchesAndConsoles" value="false" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/Y/Dropbox/1University of Toronto/0Graduate School/docs",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.notebooks.jupyter.connections.configuration.JupyterServerConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/Y/Dropbox/1University of Toronto/0Graduate School/docs&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.notebooks.jupyter.connections.configuration.JupyterServerConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="conda activate docs" />
@@ -127,7 +126,7 @@
       <workItem from="1693582899614" duration="36000" />
       <workItem from="1693582946809" duration="67000" />
       <workItem from="1693583056767" duration="335000" />
-      <workItem from="1693583419517" duration="4382000" />
+      <workItem from="1693583419517" duration="4496000" />
     </task>
     <task id="LOCAL-00001" summary="Organize table of contents">
       <option name="closed" value="true" />
@@ -185,7 +184,31 @@
       <option name="project" value="LOCAL" />
       <updated>1693588334758</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Update documentation on code">
+      <option name="closed" value="true" />
+      <created>1693588766973</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1693588766973</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Test github actions">
+      <option name="closed" value="true" />
+      <created>1693588808181</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1693588808181</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Remove system files">
+      <option name="closed" value="true" />
+      <created>1693588849906</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1693588849906</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,7 +234,9 @@
     <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/docs.iml&#10;#&#9;.idea/misc.xml&#10;#&#9;.idea/workspace.xml&#10;#&#9;_build/.doctrees/environment.pickle&#10;#&#9;_build/html/objects.inv&#10;#&#9;_build/html/searchindex.js&#10;#&#9;requirements.txt" />
     <MESSAGE value="Correct setting formatting" />
     <MESSAGE value="Update documentation on code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update documentation on code" />
+    <MESSAGE value="Test github actions" />
+    <MESSAGE value="Remove system files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove system files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
