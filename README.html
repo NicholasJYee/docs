@@ -357,7 +357,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#primary-author-nicholas-j-yee">Primary Author: Nicholas J. Yee</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#primary-author-nicholas-j-yee-md">Primary Author: Nicholas J. Yee, MD</a></li>
 </ul>
             </nav>
         </div>
@@ -371,9 +371,15 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="overview">
 <h1>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">#</a></h1>
-<section id="primary-author-nicholas-j-yee">
-<h2>Primary Author: Nicholas J. Yee<a class="headerlink" href="#primary-author-nicholas-j-yee" title="Permalink to this heading">#</a></h2>
+<section id="primary-author-nicholas-j-yee-md">
+<h2>Primary Author: Nicholas J. Yee, MD<a class="headerlink" href="#primary-author-nicholas-j-yee-md" title="Permalink to this heading">#</a></h2>
 <p>This repo contains the source code for the <span class="xref myst">Jupyter Book</span> for my graduate studies.</p>
+<p>If this is your first time running this project,
+install the conda environment for this project, which will
+install all the necessary packages locally and enclosed:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>env<span class="w"> </span>create<span class="w"> </span>-f<span class="w"> </span>docs.yml
+</pre></div>
+</div>
 <p>Build the html and pdf using the command:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>activate<span class="w"> </span>docs<span class="w"> </span>
 </pre></div>
@@ -385,8 +391,8 @@ document.write(`
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python3<span class="w"> </span>-m<span class="w"> </span>http.server<span class="w"> </span>-d<span class="w"> </span>_build/html<span class="w"> </span>
 </pre></div>
 </div>
-<p>Update the ‘requirements.txt’ using the command:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>list<span class="w"> </span>--export<span class="w"> </span>&gt;<span class="w"> </span>requirements.txt<span class="w"> </span>
+<p>Update the package list using the command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>env<span class="w"> </span><span class="nb">export</span><span class="w"> </span>--name<span class="w"> </span>docs<span class="w"> </span>&gt;<span class="w"> </span>docs.yml
 </pre></div>
 </div>
 </section>
@@ -441,7 +447,7 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#primary-author-nicholas-j-yee">Primary Author: Nicholas J. Yee</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#primary-author-nicholas-j-yee-md">Primary Author: Nicholas J. Yee, MD</a></li>
 </ul>
   </nav></div>
 

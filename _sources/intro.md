@@ -1,4 +1,5 @@
 # Welcome to Nicholas J. Yee's documentation
+**Supervisor**: Drs. Cari Whyne and Mansur Halai
 
 This document contains the organized notes and documentation for 
 projects contained within the scope of his graduate studies.
