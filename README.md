@@ -4,11 +4,25 @@ This repo contains the source code for the [Jupyter Book]([url](https://jupyterb
 
 Build the html and pdf using the command:
 
-` conda activate docs `
+```bash
+conda activate docs 
+```
 
 
-` jb build docs `
+```bash
+jb build .
+````
+Update the 'requirements.txt' using the command:
+
+```bash
+conda list --export > requirements.txt 
+```
 
 Host the html file using the command:
 
-` python3 -m http.server -d docs/_build/html `
+```bash 
+python3 -m http.server -d _build/html 
+```
+
+
+
