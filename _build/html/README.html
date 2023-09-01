@@ -150,18 +150,18 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Ultrasound hip fracture screening tool</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="chapters/0_US_Hip_Dataset_Documentation.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapters/0_US_Hip_Dataset_Documentation.html">Overview</a></li>
 
 
 
 
-<li class="toctree-l1"><a class="reference internal" href="chapters/1_DICOM_to_JPEG_Frames_Code.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapters/1_DICOM_to_JPEG_Frames_Code.html">Saving individual ultrasound frames</a></li>
 
 
-<li class="toctree-l1"><a class="reference internal" href="chapters/2_Square_Mask_Segmentation_Code.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapters/2_Square_Mask_Segmentation_Code.html">Segmentation - square mask</a></li>
 
 
-<li class="toctree-l1"><a class="reference internal" href="chapters/3_PyTorch_Image_Classification_Code.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapters/3_PyTorch_Image_Classification_Code.html">ResNet models for identifying anatomy and US orientation</a></li>
 
 
 </ul>
@@ -381,12 +381,12 @@ document.write(`
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jb<span class="w"> </span>build<span class="w"> </span>.
 </pre></div>
 </div>
-<p>Update the ‘requirements.txt’ using the command:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>list<span class="w"> </span>--export<span class="w"> </span>&gt;<span class="w"> </span>requirements.txt<span class="w"> </span>
+<p>Host the html file using the command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python3<span class="w"> </span>-m<span class="w"> </span>http.server<span class="w"> </span>-d<span class="w"> </span>_build/html<span class="w"> </span>
 </pre></div>
 </div>
-<p>Host the html file using the command:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python3<span class="w"> </span>-m<span class="w"> </span>http.server<span class="w"> </span>-d<span class="w"> </span>docs/_build/html<span class="w"> </span>
+<p>Update the ‘requirements.txt’ using the command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>list<span class="w"> </span>--export<span class="w"> </span>&gt;<span class="w"> </span>requirements.txt<span class="w"> </span>
 </pre></div>
 </div>
 </section>

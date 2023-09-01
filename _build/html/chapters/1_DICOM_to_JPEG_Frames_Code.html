@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Introduction &#8212; Yee&#39;s Documentation</title>
+    <title>Saving individual ultrasound frames &#8212; Yee&#39;s Documentation</title>
   
   
   
@@ -64,8 +64,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/1_DICOM_to_JPEG_Frames_Code';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Introduction" href="2_Square_Mask_Segmentation_Code.html" />
-    <link rel="prev" title="Introduction" href="0_US_Hip_Dataset_Documentation.html" />
+    <link rel="next" title="Segmentation - square mask" href="2_Square_Mask_Segmentation_Code.html" />
+    <link rel="prev" title="Overview" href="0_US_Hip_Dataset_Documentation.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -152,18 +152,18 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Ultrasound hip fracture screening tool</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="0_US_Hip_Dataset_Documentation.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="0_US_Hip_Dataset_Documentation.html">Overview</a></li>
 
 
 
 
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Introduction</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Saving individual ultrasound frames</a></li>
 
 
-<li class="toctree-l1"><a class="reference internal" href="2_Square_Mask_Segmentation_Code.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2_Square_Mask_Segmentation_Code.html">Segmentation - square mask</a></li>
 
 
-<li class="toctree-l1"><a class="reference internal" href="3_PyTorch_Image_Classification_Code.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3_PyTorch_Image_Classification_Code.html">ResNet models for identifying anatomy and US orientation</a></li>
 
 
 </ul>
@@ -349,7 +349,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Introduction</h1>
+    <h1>Saving individual ultrasound frames</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -359,7 +359,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Introduction</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Saving individual ultrasound frames</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#code-explanation">Code Explanation</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#libraries-used">Libraries Used</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#function-convert-and-save-frames-to-jpeg">Function: <code class="docutils literal notranslate"><span class="pre">convert_and_save_frames_to_jpeg</span></code></a><ul class="nav section-nav flex-column">
@@ -383,8 +383,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="introduction">
-<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="saving-individual-ultrasound-frames">
+<h1>Saving individual ultrasound frames<a class="headerlink" href="#saving-individual-ultrasound-frames" title="Permalink to this heading">#</a></h1>
 <p>This notebook provides a comprehensive explanation of the Python code designed to convert DICOM (Digital Imaging and Communications in Medicine) files to JPEG format. The script is particularly useful for medical image processing tasks.</p>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="code-explanation">
@@ -429,7 +429,51 @@ document.write(`
 <li><p><strong>Iterates through all files</strong>: In the input directory and calls <code class="docutils literal notranslate"><span class="pre">convert_and_save_frames_to_jpeg</span></code> for each.</p></li>
 <li><p><strong>Output Message</strong>: A message is printed indicating where the converted JPEGs have been saved.</p></li>
 </ul>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pydicom</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
+<span class="kn">from</span> <span class="nn">pydicom.errors</span> <span class="kn">import</span> <span class="n">InvalidDicomError</span>
+
+<span class="k">def</span> <span class="nf">convert_and_save_frames_to_jpeg</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="n">output_directory</span><span class="p">):</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">dicom_file</span> <span class="o">=</span> <span class="n">pydicom</span><span class="o">.</span><span class="n">dcmread</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span>
+    <span class="k">except</span> <span class="n">InvalidDicomError</span><span class="p">:</span>
+        <span class="k">return</span>  <span class="c1"># Skip this file if it&#39;s not a valid DICOM file</span>
+
+    <span class="n">pixel_array</span> <span class="o">=</span> <span class="n">dicom_file</span><span class="o">.</span><span class="n">pixel_array</span>
+
+    <span class="k">if</span> <span class="s1">&#39;NumberOfFrames&#39;</span> <span class="ow">in</span> <span class="n">dicom_file</span> <span class="ow">and</span> <span class="nb">int</span><span class="p">(</span><span class="n">dicom_file</span><span class="o">.</span><span class="n">NumberOfFrames</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">frames</span> <span class="o">=</span> <span class="p">[</span><span class="n">pixel_array</span><span class="p">[</span><span class="n">frame_index</span><span class="p">]</span> <span class="k">for</span> <span class="n">frame_index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">dicom_file</span><span class="o">.</span><span class="n">NumberOfFrames</span><span class="p">))]</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">frames</span> <span class="o">=</span> <span class="p">[</span><span class="n">pixel_array</span><span class="p">]</span>
+
+    <span class="k">for</span> <span class="n">frame_index</span><span class="p">,</span> <span class="n">frame</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">frames</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">frame</span><span class="o">.</span><span class="n">ndim</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">:</span>
+            <span class="n">frame</span> <span class="o">=</span> <span class="n">frame</span><span class="p">[:,</span> <span class="p">:,</span> <span class="mi">0</span><span class="p">]</span>
+
+        <span class="n">frame_normalized</span> <span class="o">=</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">maximum</span><span class="p">(</span><span class="n">frame</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">/</span> <span class="n">frame</span><span class="o">.</span><span class="n">max</span><span class="p">())</span> <span class="o">*</span> <span class="mf">255.0</span>
+        <span class="n">frame_uint8</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">(</span><span class="n">frame_normalized</span><span class="p">)</span>
+
+        <span class="n">image</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">fromarray</span><span class="p">(</span><span class="n">frame_uint8</span><span class="p">,</span> <span class="s1">&#39;L&#39;</span><span class="p">)</span>
+        <span class="n">output_file_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">output_directory</span><span class="p">,</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span><span class="si">}{</span><span class="n">frame_index</span><span class="o">+</span><span class="mi">1</span><span class="si">:</span><span class="s1">04</span><span class="si">}</span><span class="s1">.jpeg&#39;</span><span class="p">)</span>
+
+        <span class="n">image</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">output_file_path</span><span class="p">)</span>
+
+<span class="c1"># Define the input and output directories</span>
+<span class="n">directory_path</span> <span class="o">=</span> <span class="s1">&#39;./data/philipsepiq7g_c5-1/0all/full_dicom&#39;</span>  <span class="c1"># Replace with the actual directory path</span>
+<span class="n">output_directory</span> <span class="o">=</span> <span class="s1">&#39;./data/philipsepiq7g_c5-1/0all/frames&#39;</span>  <span class="c1"># Replace with the desired output directory</span>
+
+<span class="c1"># Create the output directory if it doesn&#39;t exist</span>
+<span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">output_directory</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Iterate through all files in the directory</span>
+<span class="k">for</span> <span class="n">file_name</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">directory_path</span><span class="p">):</span>
+    <span class="n">file_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">directory_path</span><span class="p">,</span> <span class="n">file_name</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">file_path</span><span class="p">):</span>
+        <span class="n">convert_and_save_frames_to_jpeg</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="n">output_directory</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Frames have been converted to JPEG and saved in </span><span class="si">{</span><span class="n">output_directory</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </section>
@@ -476,7 +520,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Introduction</p>
+        <p class="prev-next-title">Overview</p>
       </div>
     </a>
     <a class="right-next"
@@ -484,7 +528,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Introduction</p>
+        <p class="prev-next-title">Segmentation - square mask</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -506,7 +550,7 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Introduction</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Saving individual ultrasound frames</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#code-explanation">Code Explanation</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#libraries-used">Libraries Used</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#function-convert-and-save-frames-to-jpeg">Function: <code class="docutils literal notranslate"><span class="pre">convert_and_save_frames_to_jpeg</span></code></a><ul class="nav section-nav flex-column">
