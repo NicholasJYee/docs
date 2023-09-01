@@ -23,10 +23,12 @@ jobs:
       with:
         python-version: ${{ matrix.python-version }}
         cache: 'pip'
-    - name: Install dependencies
+    - name: Identify dependencies
       run: |
         pip install --upgrade pip
         pip freeze > requirements.txt
+        
+    - name: Install dependencies
         pip install -r requirements.txt
         pip list
 
