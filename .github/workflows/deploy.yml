@@ -23,12 +23,13 @@ jobs:
       with:
         python-version: ${{ matrix.python-version }}
         cache: 'pip'
+    - name: Upgrade pip
+      run: pip install --upgrade pip
+    - name: Generate requirements.txt
+      run: pip freeze > requirements.txt
     - name: Install dependencies
-      run:
-        pip install --upgrade pip
-        pip freeze > requirements.txt
-        pip install -r requirements.txt
-        pip list
+      run: pip install -r requirements.txt
+
 
     # Build the book
     - name: Build the book
