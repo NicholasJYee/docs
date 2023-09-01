@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Introduction &#8212; Yee&#39;s Documentation</title>
+    <title>Segmentation - square mask &#8212; Yee&#39;s Documentation</title>
   
   
   
@@ -64,8 +64,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/2_Square_Mask_Segmentation_Code';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Introduction" href="3_PyTorch_Image_Classification_Code.html" />
-    <link rel="prev" title="Introduction" href="1_DICOM_to_JPEG_Frames_Code.html" />
+    <link rel="next" title="ResNet models for identifying anatomy and US orientation" href="3_PyTorch_Image_Classification_Code.html" />
+    <link rel="prev" title="Saving individual ultrasound frames" href="1_DICOM_to_JPEG_Frames_Code.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -152,18 +152,18 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Ultrasound hip fracture screening tool</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="0_US_Hip_Dataset_Documentation.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="0_US_Hip_Dataset_Documentation.html">Overview</a></li>
 
 
 
 
-<li class="toctree-l1"><a class="reference internal" href="1_DICOM_to_JPEG_Frames_Code.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1_DICOM_to_JPEG_Frames_Code.html">Saving individual ultrasound frames</a></li>
 
 
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Introduction</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Segmentation - square mask</a></li>
 
 
-<li class="toctree-l1"><a class="reference internal" href="3_PyTorch_Image_Classification_Code.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3_PyTorch_Image_Classification_Code.html">ResNet models for identifying anatomy and US orientation</a></li>
 
 
 </ul>
@@ -349,7 +349,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Introduction</h1>
+    <h1>Segmentation - square mask</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -359,7 +359,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Introduction</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Segmentation - square mask</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#code-explanation">Code Explanation</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#libraries-used">Libraries Used</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#function-apply-square-mask">Function: <code class="docutils literal notranslate"><span class="pre">apply_square_mask</span></code></a><ul class="nav section-nav flex-column">
@@ -383,8 +383,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="introduction">
-<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="segmentation-square-mask">
+<h1>Segmentation - square mask<a class="headerlink" href="#segmentation-square-mask" title="Permalink to this heading">#</a></h1>
 <p>This notebook provides a detailed explanation of the Python code designed for applying a square mask to a set of images. This process can be particularly useful in medical image segmentation.</p>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="code-explanation">
@@ -434,9 +434,7 @@ document.write(`
 <li><p><strong>Iterates through JPEG files</strong>: In <code class="docutils literal notranslate"><span class="pre">input_directory</span></code> and calls <code class="docutils literal notranslate"><span class="pre">apply_square_mask</span></code> for each.</p></li>
 <li><p><strong>Output Message</strong>: A message is printed indicating where the masked images have been saved.</p></li>
 </ul>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -488,22 +486,6 @@ document.write(`
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hi&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">44</span>
-<span class="g g-Whitespace">     </span><span class="mi">41</span> <span class="n">square_corners</span> <span class="o">=</span> <span class="p">[(</span><span class="mi">227</span><span class="p">,</span> <span class="mi">173</span><span class="p">),</span> <span class="p">(</span><span class="mi">564</span><span class="p">,</span> <span class="mi">173</span><span class="p">),</span> <span class="p">(</span><span class="mi">564</span><span class="p">,</span> <span class="mi">510</span><span class="p">),</span> <span class="p">(</span><span class="mi">227</span><span class="p">,</span> <span class="mi">510</span><span class="p">)]</span>
-<span class="g g-Whitespace">     </span><span class="mi">43</span> <span class="c1"># Iterate through all JPEG files in the directory and apply the mask</span>
-<span class="ne">---&gt; </span><span class="mi">44</span> <span class="k">for</span> <span class="n">file_name</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">input_directory</span><span class="p">):</span>
-<span class="g g-Whitespace">     </span><span class="mi">45</span>     <span class="k">if</span> <span class="n">file_name</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;.jpeg&#39;</span><span class="p">):</span>
-<span class="g g-Whitespace">     </span><span class="mi">46</span>         <span class="n">file_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">input_directory</span><span class="p">,</span> <span class="n">file_name</span><span class="p">)</span>
-
-<span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;./data/philipsepiq7g_c5-1/0all/frames&#39;
-</pre></div>
-</div>
-</div>
-</div>
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="conclusion">
@@ -548,7 +530,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Introduction</p>
+        <p class="prev-next-title">Saving individual ultrasound frames</p>
       </div>
     </a>
     <a class="right-next"
@@ -556,7 +538,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Introduction</p>
+        <p class="prev-next-title">ResNet models for identifying anatomy and US orientation</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -578,7 +560,7 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Introduction</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Segmentation - square mask</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#code-explanation">Code Explanation</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#libraries-used">Libraries Used</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#function-apply-square-mask">Function: <code class="docutils literal notranslate"><span class="pre">apply_square_mask</span></code></a><ul class="nav section-nav flex-column">
