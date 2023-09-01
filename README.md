@@ -18,9 +18,10 @@ Host the html file using the command:
 python3 -m http.server -d _build/html 
 ```
 
-Update the 'requirements.txt' using the command:
+Update the package list using the command:
 
 ```bash
-conda list --export > requirements.txt 
+conda env export --name docs > docs.yml
+pip freeze > requirements.txt 
 ```
 
